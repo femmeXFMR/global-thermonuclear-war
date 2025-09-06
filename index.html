@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Thermonuclear War</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Screen -->
+    <div id="title-screen" class="screen active">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn red"></span>
+                    <span class="terminal-btn yellow"></span>
+                    <span class="terminal-btn green"></span>
+                </div>
+                <div class="terminal-title">WOPR - War Operation Plan Response</div>
+            </div>
+            <div class="terminal-content">
+                <div class="typewriter-text" id="typewriter-text"></div>
+                <div class="cursor">█</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rules Screen -->
+    <div id="rules-screen" class="screen">
+    <div class="terminal-window">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span class="terminal-btn red"></span>
+                <span class="terminal-btn yellow"></span>
+                <span class="terminal-btn green"></span>
+            </div>
+                <div class="terminal-title">GAME RULES - Global Thermonuclear War</div>
+        </div>
+        <div class="terminal-content">
+                <div class="rules-content">
+                    <h2>STRATEGIC NUCLEAR CHESS</h2>
+                    <div class="rules-section">
+                        <h3>OBJECTIVE</h3>
+                        <p>Capture the enemy's command center (Pentagon/Kremlin) or eliminate all enemy pieces to achieve nuclear superiority.</p>
+            </div>
+                    
+                    <div class="rules-section">
+                        <h3>PIECE MOVEMENTS</h3>
+                        <div class="piece-rules">
+                            <div class="piece-rule">
+                                <span class="piece-icon">🚀</span>
+                                <strong>ICBM</strong> - Moves like rook (straight lines)
+                    </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">✈️</span>
+                                <strong>BOMBER</strong> - Moves like queen (any direction)
+                    </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">🚢</span>
+                                <strong>SUBMARINE</strong> - Moves like knight (L-shape)
+                </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">🏗️</span>
+                                <strong>SILO</strong> - Moves like king (one square)
+            </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">🏛️</span>
+                                <strong>COMMAND</strong> - Moves like king (one square)
+        </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">🛡️</span>
+                                <strong>ABM</strong> - Moves like bishop (diagonally)
+            </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">��️</span>
+                                <strong>SATELLITE</strong> - Moves like rook (straight)
+        </div>
+                            <div class="piece-rule">
+                                <span class="piece-icon">👨‍✈️</span>
+                                <strong>GENERAL</strong> - Moves like king (one square)
+                            </div>
+            </div>
+        </div>
+
+                    <div class="rules-section">
+                        <h3>HOW TO PLAY</h3>
+                        <ol>
+                            <li>Click on your piece to select it</li>
+                            <li>Click on a valid destination square to move</li>
+                            <li>Capture enemy pieces by moving to their square</li>
+                            <li>Protect your command center at all costs!</li>
+                        </ol>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="showGameModeSelection()">CONTINUE TO GAME</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Mode Selection -->
+    <div id="game-mode-screen" class="screen">
+        <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-btn red"></span>
+                        <span class="terminal-btn yellow"></span>
+                        <span class="terminal-btn green"></span>
+                    </div>
+                <div class="terminal-title">SELECT GAME MODE</div>
+                </div>
+                <div class="terminal-content">
+                <div class="game-mode-selection">
+                    <h2>CHOOSE YOUR BATTLE</h2>
+                    <div class="mode-options">
+                        <button class="btn mode-option" onclick="selectGameMode('human')">
+                            <span class="mode-icon">👥</span>
+                            <span class="mode-title">Human vs Human</span>
+                            <span class="mode-desc">Two players take turns</span>
+                        </button>
+                        <button class="btn mode-option" onclick="selectGameMode('computer')">
+                            <span class="mode-icon">🤖</span>
+                            <span class="mode-title">Human vs Computer</span>
+                            <span class="mode-desc">Play against AI opponent</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+
+    <!-- Team Selection -->
+    <div id="team-selection-screen" class="screen">
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn red"></span>
+                    <span class="terminal-btn yellow"></span>
+                    <span class="terminal-btn green"></span>
+                </div>
+                <div class="terminal-title">CHOOSE YOUR SIDE</div>
+            </div>
+            <div class="terminal-content">
+                <div class="team-selection">
+                    <h2>SELECT YOUR FORCES</h2>
+                    <div class="team-options">
+                        <button class="btn team-option us-option" onclick="selectTeam('US')">
+                            <span class="team-icon">🇺🇸</span>
+                            <span class="team-name">United States</span>
+                            <span class="team-desc">Play as the US (Blue)</span>
+                        </button>
+                        <button class="btn team-option ussr-option" onclick="selectTeam('USSR')">
+                            <span class="team-icon">☭</span>
+                            <span class="team-name">Soviet Union</span>
+                            <span class="team-desc">Play as the USSR (Red)</span>
+                        </button>
+                    </div>
+                    <button class="btn btn-secondary" onclick="showGameModeSelection()" style="margin-top: 20px;">
+                        ← Back to Game Mode
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Main Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="header">
+            <h1 class="title">GLOBAL THERMONUCLEAR WAR</h1>
+            <p class="subtitle">Strategic Nuclear Chess</p>
+        </div>
+
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="terminal-btn red"></span>
+                    <span class="terminal-btn yellow"></span>
+                    <span class="terminal-btn green"></span>
+            </div>
+                <div class="terminal-title">WOPR - Global Thermonuclear War v1.0</div>
+            </div>
+            
+            <div class="terminal-content">
+                <div class="game-container">
+                    <div class="game-info">
+                        <div class="current-player" id="current-player-display">
+                            <span class="player-icon" id="player-icon">🇺🇸</span>
+                            <span id="current-player">US</span>
+                            <span id="turn-indicator" class="turn-indicator">YOUR TURN</span>
+                        </div>
+                        <div class="game-stats">
+                            <div class="move-count">Moves: <span id="move-count">0</span></div>
+                            <div class="scores">
+                                <div class="score us-score">
+                                    <span class="score-icon">🇺🇸</span>
+                                    <span class="score-label">US:</span>
+                                    <span id="us-score" class="score-value">16</span>
+                                </div>
+                                <div class="score ussr-score">
+                                    <span class="score-icon">☭</span>
+                                    <span class="score-label">USSR:</span>
+                                    <span id="ussr-score" class="score-value">16</span>
+                                </div>
+                            </div>
+        </div>
+    </div>
+
+                    <div class="board" id="board"></div>
+
+                    <div class="controls">
+                        <button class="btn btn-primary" onclick="resetGame()">New War</button>
+                        <button class="btn btn-secondary" onclick="showRules()">Rules</button>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" class="screen">
+        <div class="game-over">
+                <div class="nuclear-explosion">
+                <div class="mushroom-cloud" id="mushroom-cloud"></div>
+                </div>
+                <div class="game-over-content">
+                <div class="victory-animation" id="victory-animation">🎉</div>
+                <h1 id="victory-message">VICTORY!</h1>
+                    <h2>NUCLEAR WAR CONCLUDED</h2>
+                <p id="victory-text">Congratulations! You have won the war!</p>
+                <button class="btn btn-primary" onclick="resetGame()" style="font-size: 1.2rem; padding: 15px 30px;">
+                        🚀 New Nuclear War
+                    </button>
+                </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

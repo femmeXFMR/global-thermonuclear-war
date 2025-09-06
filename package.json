@@ -1,0 +1,41 @@
+{
+  "name": "global-thermonuclear-war",
+  "version": "1.0.0",
+  "description": "A retro-styled web-based chess game inspired by the classic Global Thermonuclear War from WarGames",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "chess",
+    "war-games",
+    "retro",
+    "terminal",
+    "nuclear-war",
+    "strategy-game",
+    "browser-game",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/global-thermonuclear-war.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/global-thermonuclear-war/issues"
+  },
+  "homepage": "https://yourusername.github.io/global-thermonuclear-war",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
