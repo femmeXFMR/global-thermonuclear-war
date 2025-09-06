@@ -21,7 +21,7 @@ class GlobalThermonuclearWar {
             'US_SILO': { icon: '🏗️', label: 'SILO', color: '#00ff00' },
             'US_COMMAND': { icon: '🏛️', label: 'PENT', color: '#00ff00' },
             'US_DEFENSE': { icon: '🛡️', label: 'ABM', color: '#00ff00' },
-            'US_SATELLITE': { icon: '★', label: 'SAT', color: '#00ff00' },
+            'US_SATELLITE': { icon: '🛰️', label: 'SAT', color: '#00ff00' },
             'US_SOLDIER': { icon: '👨‍✈️', label: 'GEN', color: '#00ff00' },
             'USSR_ICBM': { icon: '🚀', label: 'ICBM', color: '#ff6b6b' },
             'USSR_BOMBER': { icon: '✈️', label: 'TU-95', color: '#ff6b6b' },
@@ -29,7 +29,7 @@ class GlobalThermonuclearWar {
             'USSR_SILO': { icon: '🏗️', label: 'SILO', color: '#ff6b6b' },
             'USSR_COMMAND': { icon: '🏛️', label: 'KREML', color: '#ff6b6b' },
             'USSR_DEFENSE': { icon: '🛡️', label: 'ABM', color: '#ff6b6b' },
-            'USSR_SATELLITE': { icon: '★', label: 'SAT', color: '#ff6b6b' },
+            'USSR_SATELLITE': { icon: '🛰️', label: 'SAT', color: '#ff6b6b' },
             'USSR_SOLDIER': { icon: '👨‍✈️', label: 'GEN', color: '#ff6b6b' }
         };
         
