@@ -21,7 +21,7 @@ class GlobalThermonuclearWar {
             'US_SILO': { icon: '🏗️', label: 'SILO', color: '#00ff00' },
             'US_COMMAND': { icon: '🏛️', label: 'PENT', color: '#00ff00' },
             'US_DEFENSE': { icon: '🛡️', label: 'ABM', color: '#00ff00' },
-            'US_SATELLITE': { icon: '🛸', label: 'SAT', color: '#00ff00' },
+            'US_SATELLITE': { icon: '★', label: 'SAT', color: '#00ff00' },
             'US_SOLDIER': { icon: '👨‍✈️', label: 'GEN', color: '#00ff00' },
             'USSR_ICBM': { icon: '🚀', label: 'ICBM', color: '#ff6b6b' },
             'USSR_BOMBER': { icon: '✈️', label: 'TU-95', color: '#ff6b6b' },
@@ -29,7 +29,7 @@ class GlobalThermonuclearWar {
             'USSR_SILO': { icon: '🏗️', label: 'SILO', color: '#ff6b6b' },
             'USSR_COMMAND': { icon: '🏛️', label: 'KREML', color: '#ff6b6b' },
             'USSR_DEFENSE': { icon: '🛡️', label: 'ABM', color: '#ff6b6b' },
-            'USSR_SATELLITE': { icon: '🛸', label: 'SAT', color: '#ff6b6b' },
+            'USSR_SATELLITE': { icon: '★', label: 'SAT', color: '#ff6b6b' },
             'USSR_SOLDIER': { icon: '👨‍✈️', label: 'GEN', color: '#ff6b6b' }
         };
         
@@ -125,17 +125,22 @@ Ready for strategic combat.
 Press any key to continue...`;
 
         let index = 0;
+        let animationComplete = false;
         const typewriterElement = document.getElementById('typewriter-text');
         
+        // Add skip functionality that works throughout the animation
+        this.handleTitleKeyPress = this.handleTitleKeyPress.bind(this);
+        document.addEventListener('keydown', this.handleTitleKeyPress);
+        document.addEventListener('click', this.handleTitleKeyPress);
+        
         const typeNextChar = () => {
-            if (index < text.length) {
+            if (index < text.length && !animationComplete) {
                 typewriterElement.textContent += text.charAt(index);
                 index++;
                 setTimeout(typeNextChar, 50);
-            } else {
-                this.handleTitleKeyPress = this.handleTitleKeyPress.bind(this);
-                document.addEventListener('keydown', this.handleTitleKeyPress);
-                document.addEventListener('click', this.handleTitleKeyPress);
+            } else if (!animationComplete) {
+                animationComplete = true;
+                // Keep the event listeners active for the "Press any key to continue" message
             }
         };
         
