@@ -5,6 +5,7 @@
 A retro-styled, web-based “chess-like” game loosely inspired by *WarGames* and its infamous “Global Thermonuclear War.” You can take on the role of the United States or the Soviet Union, battling it out with nuclear pieces on a terminal-styled board. 
 
 ![Game Screenshot](screenshot1.png)
+<!-- Updated screenshot -->
 
 ## 🎮 Play Now  
 
