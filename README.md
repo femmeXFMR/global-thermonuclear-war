@@ -1,5 +1,7 @@
 # Global Thermonuclear War
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 > **Note:** This project exists because I wanted to see what [**Cursor**](https://cursor.com/) could do. Friends tossed out ideas on Discord, and this is what stuck—so here we are. The game didn’t *need* to exist, but it does now, so I wanted to make it publicly playable.  
 
 A retro-styled, web-based “chess-like” game loosely inspired by *WarGames* and its infamous “Global Thermonuclear War.” You can take on the role of the United States or the Soviet Union, battling it out with nuclear pieces on a terminal-styled board. 
