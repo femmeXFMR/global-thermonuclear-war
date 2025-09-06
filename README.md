@@ -1,12 +1,14 @@
 # Global Thermonuclear War
 
-A retro-styled web-based chess game inspired by the classic "Global Thermonuclear War" from the movie WarGames. Play as either the United States or the Soviet Union in a strategic nuclear conflict with authentic 1983 terminal aesthetics.
+> **Note:** This project exists because I wanted to see what [**Cursor**](https://cursor.com/) could do. Friends tossed out ideas on Discord, and this is what stuck—so here we are. The game didn’t *need* to exist, but it does now, so I wanted to make it publicly playable.  
 
-![Game Screenshot](https://via.placeholder.com/800x600/000000/00FF00?text=GLOBAL+THERMONUCLEAR+WAR)
+A retro-styled, web-based “chess-like” game loosely inspired by *WarGames* and its infamous “Global Thermonuclear War.” You can take on the role of the United States or the Soviet Union, battling it out with nuclear pieces on a terminal-styled board. 
 
-## 🎮 Play Now
+![Game Screenshot](screenshot1.png)
 
-**Live Demo**: [Play Global Thermonuclear War](https://your-domain.com)
+## 🎮 Play Now  
+
+Play it here: [**Global Thermonuclear War on GitHub Pages**](https://femmexfmr.github.io/global-thermonuclear-war/)  
 
 ## ✨ Features
 
@@ -143,6 +145,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Original Global Thermonuclear War game concept
 - Terminal aesthetics inspired by 1980s computer interfaces
 - Chess rules adapted for nuclear warfare theme
+- Completely written with [**Cursor**](https://cursor.com/)
 
 ## 🎬 Movie Quote
 
@@ -150,4 +153,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Ready to play?** [Start your nuclear war!](https://your-domain.com) 🚀💥
+**Ready to play?** [Start your nuclear war!](https://femmexfmr.github.io/global-thermonuclear-war) 🚀💥
