@@ -91,6 +91,12 @@ class GlobalThermonuclearWar {
             screen.classList.remove('active');
         });
         document.getElementById(screenId).classList.add('active');
+        
+        // Show footer only on title screen
+        const footer = document.getElementById('credit-footer');
+        if (footer) {
+            footer.style.display = screenId === 'title-screen' ? 'block' : 'none';
+        }
     }
     
     startTitleSequence() {
