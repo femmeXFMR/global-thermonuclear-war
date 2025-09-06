@@ -40,6 +40,12 @@ class GlobalThermonuclearWar {
         this.gameState.board = this.initializeBoard();
         this.showScreen('title-screen');
         this.startTitleSequence();
+        
+        // Ensure footer is visible on title screen
+        const footer = document.getElementById('credit-footer');
+        if (footer) {
+            footer.style.display = 'block';
+        }
     }
     
     initializeBoard() {
