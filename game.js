@@ -95,7 +95,10 @@ class GlobalThermonuclearWar {
         // Show footer only on title screen
         const footer = document.getElementById('credit-footer');
         if (footer) {
+            console.log('Screen:', screenId, 'Footer display:', screenId === 'title-screen' ? 'block' : 'none');
             footer.style.display = screenId === 'title-screen' ? 'block' : 'none';
+        } else {
+            console.log('Footer element not found!');
         }
     }
     
